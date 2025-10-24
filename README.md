@@ -2,7 +2,7 @@
 
 **Production-ready unified API** - All endpoints on one port.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 cd api
