@@ -11,9 +11,7 @@ npm start
 
 Server runs on **http://localhost:3000**
 
-## 📋 API Endpoints
-
-All endpoints are on **one server, one port** (localhost:3000):
+## API Endpoints
 
 ### **Trading**
 
@@ -114,7 +112,7 @@ Get balances for multiple wallets (batch, max 100)
 }
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 Create `.env` file in `api/trading/.env`:
 
@@ -125,19 +123,19 @@ PORT=3000
 
 If no API key is set, you must include `apiKey` in each trading request.
 
-## 📦 Commands
+##  Commands
 
 | Command | Description |
 |---------|-------------|
 | `npm start` | Run server (production) |
 | `npm run dev` | Run with auto-reload (development) |
 
-## 🌐 Network
+##  Network
 
 - **Mainnet only** - All operations on Solana mainnet
 - No testnet/devnet support
 
-## 📡 Example Usage
+##  Example Usage
 
 ### JavaScript/TypeScript
 
@@ -195,27 +193,8 @@ curl -X POST http://localhost:3000/api/sell \
 curl http://localhost:3000/api/balance/YOUR_WALLET_ADDRESS
 ```
 
-## 🔐 Security
-
-- API key stored in `.env` (not committed to git)
-- CORS enabled for cross-origin requests
-- Input validation on all endpoints
-- Error handling for invalid addresses/amounts
-
-## 🏗️ Architecture
-
-**Single unified server** (`server.js`) with:
-- ✅ Trading endpoints (buy/sell)
-- ✅ Balance endpoints (single/batch)
-- ✅ All on port 3000
-- ✅ Production-ready
-
-No multiple deployments needed - just one server!
-
-## 📝 Notes
-
-- **0.5% PumpPortal fee** on each trade
-- **Percentage sells**: Use strings like "10%", "25%", "50%", "100%"
-- **Exact sells**: Use numbers like 1000, 5000
-- **Max batch**: 100 addresses per request
-- **Lamports**: 1 SOL = 1,000,000,000 lamports
+## TODO:
+ - Finish up the api( i need to add endpoint to fetch balance of AIs wallet)
+ - Start working on the tools
+ - Make UI
+ - Implement the AI
